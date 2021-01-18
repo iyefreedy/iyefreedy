@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("../font/Nunito-Regular.ttf") format("truetype");
+}
+
+body {
+  font-family: Nunito, sans-serif !important;
+}
+
+.clear {
+  clear: both;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/* Custom styles here */
+
+/* Navbar */
+.navbar {
+  background-image: linear-gradient(90deg, #0000ff, #004fff);
+  padding: 20px 0;
+  box-shadow: 0 6px 3px rgba(0, 0, 0, 0.7);
+}
+
+.header-left {
+  float: left;
+}
+
+.header-left a {
+  font-size: 30px;
+  color: #ffe4c4;
+}
+
+.header-right {
+  float: right;
+}
+
+.header-right ul li {
+  display: inline-block;
+  margin-top: 7px;
+  margin-right: 28px;
+}
+
+.header-right ul li a {
+  font-size: 18px;
+  color: #ffe4c4;
+}
+
+/* About Wrapper */
+.about-wrapper {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.photo {
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+
+.about-wrapper h1 {
+  margin-bottom: 10px;
+  background-color: #ffa500;
+}
+
+.about-wrapper p {
+  font-size: 18px;
+}
+/* Skill Wrapper */
+
+.skill-wrapper {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.skill-wrapper h1 {
+  background-color: #ffa500;
+}
+
+.skills {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.skill {
+  padding: 50px;
+}
+
+.skill-icon {
+  width: 150px;
+  height: 150px;
+}
+
+/* Contact Wrapper */
