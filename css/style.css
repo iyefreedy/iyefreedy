@@ -12,6 +12,11 @@
 
 body {
   font-family: Nunito, sans-serif !important;
+  padding-top: 80px;
+}
+
+a {
+  color: #ffffff;
 }
 
 .clear {
@@ -21,15 +26,68 @@ body {
 .container {
   max-width: 1170px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 /* Custom styles here */
 
 /* Navbar */
 .navbar {
-  background-image: linear-gradient(90deg, #0000ff, #004fff);
+  background-image: linear-gradient(90deg, #0000ff, #3574fd);
   padding: 20px 0;
   box-shadow: 0 6px 3px rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  color: white !important;
+}
+
+.sidebar-wrapper {
+  display: none;
+  float: right;
+  margin-top: 5px;
+}
+
+.sidebar-wrapper i.fa-bars {
+  cursor: pointer;
+}
+
+.sidebar i.fa-times {
+  position: absolute;
+  top: 24px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: absolute;
+  background-image: linear-gradient(90deg, #0000ff, #3574fd);
+  top: 0;
+  right: -9999px;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  transition: 0.5s;
+}
+
+.sidebar h1 {
+  margin-top: 20px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+.nav li {
+  border-bottom: 3px solid #ffffff;
+}
+
+.nav li a {
+  font-size: 24px;
 }
 
 .header-left {
@@ -38,7 +96,11 @@ body {
 
 .header-left a {
   font-size: 30px;
-  color: #ffe4c4;
+  transition: 0.3s;
+}
+
+.header-left a:hover {
+  color: #000000;
 }
 
 .header-right {
@@ -48,28 +110,33 @@ body {
 .header-right ul li {
   display: inline-block;
   margin-top: 7px;
-  margin-right: 28px;
+  margin-left: 28px;
 }
 
 .header-right ul li a {
   font-size: 18px;
-  color: #ffe4c4;
+  transition: 0.3s;
+}
+
+.header-right ul li a:hover {
+  color: #000000;
 }
 
 /* About Wrapper */
 .about-wrapper {
   text-align: center;
-  padding: 60px 0;
+  padding: 20px 0;
+  background-color: #ffa500;
 }
 
 .photo {
   border-radius: 50%;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .about-wrapper h1 {
   margin-bottom: 10px;
-  background-color: #ffa500;
+  margin-top: 20px;
 }
 
 .about-wrapper p {
@@ -79,11 +146,11 @@ body {
 
 .skill-wrapper {
   text-align: center;
-  padding: 60px 0;
+  padding: 20px 0;
 }
 
 .skill-wrapper h1 {
-  background-color: #ffa500;
+  /* background-color: #ffa500; */
 }
 
 .skills {
@@ -105,12 +172,13 @@ body {
 
 /* Contact Wrapper */
 .contact-wrapper {
-  padding: 60px 0;
+  padding: 20px 0;
   text-align: center;
+  background-color: #ffa500;
 }
 
 .contact-wrapper h1 {
-  background-color: #ffa500;
+  /* background-color: #ffa500; */
 }
 
 .contact {
@@ -120,9 +188,22 @@ body {
 
 /* Footer wrapper */
 .footer {
-  background-image: linear-gradient(90deg, #0000ff, #004fff);
+  background-image: linear-gradient(90deg, #0000ff, #3547da);
   text-align: center;
-  padding: 60px 0;
+  padding: 20px 0;
 }
 
 /* Responsive Breakpoint */
+
+/* Tablet */
+
+/* Smartphone */
+@media all and (max-width: 670px) {
+  .header-right {
+    display: none;
+  }
+
+  .sidebar-wrapper {
+    display: block;
+  }
+}
