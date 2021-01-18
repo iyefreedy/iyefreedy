@@ -8,9 +8,9 @@ toggle.addEventListener("click", () => {
 });
 
 close.addEventListener("click", () => {
-  sidebar.style.right = "-9999px";
+  sidebar.style.right = "-999px";
 });
 
 sidebarlink.addEventListener("click", () => {
-  sidebar.style.right = -9999;
+  sidebar.style.right = "-999px";
 });
